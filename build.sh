@@ -56,7 +56,7 @@ else
 fi
 export CROSS_COMPILE=~/toolchain/aarch64-4.9/bin/aarch64-linux-android-
 
-make exynos7420-noblelte_usa_spr_defconfig
+make exynos7420-noblelte_usa_spr_defconfig > /dev/null 2>&1
 
 while read -p "Start build with:`echo $'\n ' `1) $(nproc) cores?`echo $'\n ' `2) $(($(nproc)/2)) cores?`echo $'\n '`3) $(($(nproc)/4)) cores?`echo $'\n '`X|x to cancel auto build`echo $'\n>'`" corechoice
 do
